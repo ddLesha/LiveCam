@@ -1,0 +1,6 @@
+framework module Pods_AlexStreamTest {
+  umbrella header "Pods-AlexStreamTest-umbrella.h"
+
+  export *
+  module * { export * }
+}

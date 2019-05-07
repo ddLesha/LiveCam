@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LFLiveKitSwiftDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oyV-VO-s0L">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vyl-an-hpC">
+                                <rect key="frame" x="0.0" y="44" width="414" height="409"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wBU-LZ-KBG">
+                                <rect key="frame" x="0.0" y="453" width="414" height="409"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="wBU-LZ-KBG" firstAttribute="leading" secondItem="oyV-VO-s0L" secondAttribute="leading" id="1Xt-3t-6rv"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="wBU-LZ-KBG" secondAttribute="bottom" id="90s-9M-hUa"/>
+                            <constraint firstItem="vyl-an-hpC" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="D35-AJ-iYI"/>
+                            <constraint firstAttribute="trailing" secondItem="wBU-LZ-KBG" secondAttribute="trailing" id="Oz2-Sg-Vyy"/>
+                            <constraint firstItem="wBU-LZ-KBG" firstAttribute="height" secondItem="vyl-an-hpC" secondAttribute="height" id="QMR-G9-OwQ"/>
+                            <constraint firstAttribute="trailing" secondItem="vyl-an-hpC" secondAttribute="trailing" id="jXa-Wa-Lmz"/>
+                            <constraint firstItem="vyl-an-hpC" firstAttribute="leading" secondItem="oyV-VO-s0L" secondAttribute="leading" id="uAJ-yW-9ed"/>
+                            <constraint firstItem="wBU-LZ-KBG" firstAttribute="top" secondItem="vyl-an-hpC" secondAttribute="bottom" id="yBu-B4-pL8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="viewCam" destination="vyl-an-hpC" id="iIK-WA-TBl"/>
+                        <outlet property="viewPreview" destination="wBU-LZ-KBG" id="qxf-OG-YZo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="18.75"/>
+        </scene>
+    </scenes>
+</document>
